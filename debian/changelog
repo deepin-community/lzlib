@@ -1,0 +1,582 @@
+lzlib (1.12-2) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating watch file.
+  * Updating to standards version 4.6.0.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 09 Oct 2021 09:51:09 +0200
+
+lzlib (1.12-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 1.12.
+  * Updating to standards version 4.5.1.
+  * Updating years in copyright file for 2021.
+  * Refreshing build.patch.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 25 Jan 2021 14:58:55 +0100
+
+lzlib (1.11-8) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating to debhelper version 13.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 19 Apr 2020 13:54:15 +0200
+
+lzlib (1.11-7) sid; urgency=medium
+
+  * Uploading to sid.
+  * Using execute_after targets in rules to be explicit what we're doing.
+  * Including carg_parser in liblz-dev examples (Closes: #950615).
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 04 Feb 2020 10:49:42 +0100
+
+lzlib (1.11-6) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating years in copyright file for 2020.
+  * Updating to standards version 4.5.0.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 25 Jan 2020 19:34:14 +0100
+
+lzlib (1.11-5) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating to standards version 4.4.1.
+  * Using codenames as upload targets in changelog.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 18 Nov 2019 14:33:29 +0100
+
+lzlib (1.11-4) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating to standards version 4.4.0.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 16 Jul 2019 18:30:33 +0200
+
+lzlib (1.11-3) sid; urgency=medium
+
+  * Uploading to sid.
+  * Improving watch file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 03 Feb 2019 20:14:07 +0100
+
+lzlib (1.11-2) sid; urgency=medium
+
+  * Uploading to sid.
+  * Using build-depends to specify debhelper compatibility.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 20 Jan 2019 19:37:46 +0100
+
+lzlib (1.11-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 1.11.
+  * Updating year for upstream in copyright for 2019.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 11 Jan 2019 06:25:29 +0100
+
+lzlib (1.10-3) sid; urgency=medium
+
+  * Uploading to sid.
+  * Adding lzip-compressor and lzip-decompressor alternatives.
+  * Updating to standards version 4.3.0.
+  * Updating vcs fields.
+  * Updating year in copyright for 2019.
+  * Updating to debhelper 12.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 28 Dec 2018 10:34:02 +0100
+
+lzlib (1.10-2) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating years in copyright file.
+  * Updating to standards version 4.2.1.
+  * Harmonizing changelog.
+  * Harmonizing rules file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 26 Aug 2018 12:05:44 +0200
+
+lzlib (1.10-1) sid; urgency=medium
+
+  * Uploading to sid.
+  * Merging upstream version 1.10.
+  * Using https in watch file.
+  * Updating to standards version 4.1.3.
+  * Updating to debhelper compat 11.
+  * Adding multi-arch fields.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 13 Feb 2018 08:04:14 +0100
+
+lzlib (1.9-5) sid; urgency=medium
+
+  * Uploading to sid.
+  * Removing explicit debug package in favour of automated debug packages.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 05 Nov 2017 08:46:26 +0100
+
+lzlib (1.9-4) sid; urgency=medium
+
+  * Uploading to sid.
+  * Adding Rules-Requires-Root field.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 05 Nov 2017 07:43:03 +0100
+
+lzlib (1.9-3) sid; urgency=medium
+
+  * Uploading to sid.
+  * Updating to standards version 4.1.1.
+  * Deprecating priority extra as of policy 4.0.1.
+  * Applying patch from Helmut Grohne <helmut@subdivi.de> to fix FTBFS
+    when cross-compiling (Closes: #871605).
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 17 Oct 2017 15:11:48 +0200
+
+lzlib (1.9-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating to standards version 4.0.0.
+  * Using https for copyright format url.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 18 Jun 2017 21:41:16 +0200
+
+lzlib (1.9-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Merging upstream version 1.9.
+  * Updating vcs fields.
+  * Removing superfluous --parallel when invoking debhelper as it's the
+    default with compat level 10, thanks to Gianfranco Costamagna
+    <locutusofborg@debian.org>.
+  * Refreshing build.patch.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 07 May 2017 17:59:30 +0200
+
+lzlib (1.8-5) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating year in copyright information for 2017.
+  * Moving debian specific patches to subdirectory within patches
+    directory.
+  * Using consistent email address for all downstream work.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 26 Jan 2017 17:37:04 +0100
+
+lzlib (1.8-4) sid; urgency=low
+
+  * Uploading to sid.
+  * Making maintainer scripts executable in source tree.
+  * Updating upstream signing key.
+  * Sorting alternatives handling in rules.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 10 Dec 2016 10:45:52 +0100
+
+lzlib (1.8-3) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating debhelper build-depends for version 10.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 15 Oct 2016 08:01:05 +0200
+
+lzlib (1.8-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Switching to debhelper compat 10.
+  * Adding watch file.
+  * Adding gpg verification to watch file.
+  * Updating vcs fields.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 03 Jul 2016 17:39:03 +0200
+
+lzlib (1.8-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.8.
+  * Wrap and sorting control file.
+  * Updating years in copyright file.
+  * Refreshing build.patch.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Wed, 01 Jun 2016 16:13:05 +0200
+
+lzlib (1.7-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating vcs fields.
+  * Removing manual settings for xz compression.
+  * Updating years in copyright file.
+  * Harmonizing rules file.
+  * Updating to standards version 3.9.8.
+  * Updating multiarch pre-depends.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 12 May 2016 17:04:12 +0200
+
+lzlib (1.7-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.7.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 19 Jul 2015 20:03:01 +0200
+
+lzlib (1.7~rc1-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Dropping pre-jessie breaks.
+  * Merging upstream version 1.7~rc1.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 01 Jun 2015 07:33:49 +0200
+
+lzlib (1.7~pre1-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Merging upstream version 1.7~pre1.
+  * Updating years in copyright file.
+  * Wrapping build-depends.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 14 Mar 2015 18:16:38 +0100
+
+lzlib (1.6-3) sid; urgency=low
+
+  * Uploading to sid.
+  * Removing lzip-alternative depends on liblz-dev when spliting out
+    minilzip (Closes: #774557).
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 04 Jan 2015 12:58:31 +0100
+
+lzlib (1.6-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating to standards version 3.9.6.
+  * Harmonizing update-alternatives handling across all lzip-alternative
+    providing packages.
+  * Dropping minilzip-static, not really useful since the minilzip package
+    depends on liblz anyway.
+  * Harmonizing update-alternatives priority across all lzip-alternative
+    providing packages.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 18 Sep 2014 00:15:20 +0200
+
+lzlib (1.6-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.6.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 05 Sep 2014 22:37:38 +0200
+
+lzlib (1.6~rc2-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Spliting out minilzip into own package to make liblz1 multiarch co-
+    installable.
+  * Updating copyright file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 24 Aug 2014 16:53:00 +0200
+
+lzlib (1.6~rc2-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.6~rc2.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 24 Jun 2014 16:36:15 +0200
+
+lzlib (1.6~rc1-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.6~rc1.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 10 May 2014 11:52:09 +0200
+
+lzlib (1.6~pre4-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.6~pre4.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 27 Apr 2014 11:33:16 +0200
+
+lzlib (1.6~pre3-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.6~pre3.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 05 Apr 2014 11:41:53 +0200
+
+lzlib (1.6~pre2-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Building with dh --parallel.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 31 Mar 2014 21:14:55 +0200
+
+lzlib (1.6~pre2-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Merging upstream version 1.6~pre2.
+  * Updating years in copyright for 2014.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Wed, 19 Feb 2014 22:07:47 +0100
+
+lzlib (1.6~pre1-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Updating to standards version 3.9.5.
+  * Merging upstream version 1.6~pre1.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 21 Nov 2013 07:23:18 +0100
+
+lzlib (1.5-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Updating vcs fields.
+  * Merging upstream version 1.5.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 01 Oct 2013 20:50:40 +0200
+
+lzlib (1.5~rc1-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Adding vcs fields.
+  * Wrapping control fields.
+  * Merging upstream version 1.5~rc1.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 02 Aug 2013 18:43:13 +0200
+
+lzlib (1.4-3) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Adding provides minilzip.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 10 Jun 2013 13:18:59 +0200
+
+lzlib (1.4-2) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Including minilzip.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 04 Jun 2013 17:03:00 +0200
+
+lzlib (1.4-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Merging upstream version 1.4.
+  * Rediffing build.patch.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 31 May 2013 17:35:10 +0200
+
+lzlib (1.4~rc2-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Merging upstream version 1.4~rc2.
+  * Dropping conditional multiarch support for pre-wheezy.
+  * Prefixing patches with ffour digits.
+  * Trimming diff headers in patches.
+  * Refreshing build.patch.
+  * Updating years in copyright file.
+  * Dropping dpkg-source compression levels.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 26 Mar 2013 09:56:34 +0100
+
+lzlib (1.3-4) sid; urgency=low
+
+  * Uploading to sid.
+  * Removing all references to my old email address.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 10 Mar 2013 21:14:05 +0100
+
+lzlib (1.3-3) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating to standards version 3.9.4.
+  * Adding dpkg-source local options.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 16 Dec 2012 10:43:22 +0100
+
+lzlib (1.3-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Adding patch to avoid overwriting build-environment.
+  * Switching to xz compression.
+  * Makging some editorial changes to copyright file.
+  * Simplyfing backports compatible use of multiarch debhelper install
+    files.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 30 Jun 2012 01:10:35 +0200
+
+lzlib (1.3-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.3.
+  * Updating to debhelper version 9.
+  * Updating to standards version 3.9.3.
+  * Updating years in copyright.
+  * Updating copyright file machine-readable format version 1.0.
+  * Updating debhelper example file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 16 Apr 2012 08:26:27 +0000
+
+lzlib (1.2-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Using compression level 9 also for binary packages.
+  * Merging upstream version 1.2.
+  * Sorting overrides in rules.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 28 Oct 2011 09:41:12 +0200
+
+lzlib (1.1-4) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating standards version to 3.9.2.
+  * Compacting copyright file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 10 Jul 2011 17:10:04 +0200
+
+lzlib (1.1-3) sid; urgency=low
+
+  * Uploading to sid.
+  * Making reference to licenses in copyright distribution neutral.
+  * Improving previous changelog entries.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sat, 22 Jan 2011 21:33:55 +0100
+
+lzlib (1.1-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating maintainer and uploaders fields.
+  * Removing vcs fields.
+  * Removing references to my old email address.
+  * Makeing packaging distribution neutral.
+  * Updating copyright file.
+  * Correcting shlib symlink in rules.
+  * Improving comments in rules file.
+  * Simplyfing debhelper auto_install override in rules.
+  * Reordering debhelper auto_configure override in rules.
+  * Removing unneeded build-depends on autotools-dev.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 13 Jan 2011 23:03:14 +0100
+
+lzlib (1.1-1) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Merging upstream version 1.1.
+  * Updating years in copyright file.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Wed, 05 Jan 2011 00:49:24 +0100
+
+lzlib (1.0-3) experimental; urgency=low
+
+  * Uploading to experimental.
+  * Updating standards version to 3.9.0.
+  * Switching to source format 3.0 (quilt).
+  * Updating to debhelper version 8.
+  * Updating to standards version 3.9.1.
+  * Removing pre-squeeze depends to dpkg.
+  * Switching to source format 3.0 (quilt).
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 19 Dec 2010 21:26:26 +0100
+
+lzlib (1.0-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Removing conflicts/replaces on liblz0 (Closes: #581447).
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Tue, 01 Jun 2010 07:38:47 +0200
+
+lzlib (1.0-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 1.0.
+  * Updating README.source.
+  * Updating packaging for soname bump.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 10 May 2010 18:19:55 +0200
+
+lzlib (0.9-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating to standards 3.8.4.
+  * Merging upstream version 0.9.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 12 Feb 2010 10:56:19 +0100
+
+lzlib (0.8-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Adding explicit source version 1.0 until switch to 3.0.
+  * Updating year in copyright file.
+  * Merging upstream version 0.8.
+  * Updating year in copyright file.
+  * Updating configure call in rules to keep building shared library.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 18 Jan 2010 21:51:45 +0100
+
+lzlib (0.7-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Bumping versioned build-depends on debhelper.
+  * Merging upstream version 0.7.
+  * Removing double entry in liblz-dev debhelper install file.
+  * Adding depends on install-info.
+  * Updating library symlink.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 22 Oct 2009 21:28:29 +0200
+
+lzlib (0.6-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating package to standards version 3.8.3.
+  * Adding maintainer homepage field to control.
+  * Marking maintainer homepage field to be also included in binary
+    packages and changelog.
+  * Adding README.source.
+  * Merging upstream version 0.6.
+  * Moving maintainer hompage entry from control to copyright.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 04 Sep 2009 22:12:32 +0200
+
+lzlib (0.5-3) sid; urgency=low
+
+  * Uploading to sid.
+  * Updating maintainer field.
+  * Updating vcs fields.
+  * Commenting rules file.
+  * Overriding dh_install to be called with --fail-missing.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 14 Aug 2009 02:19:15 +0200
+
+lzlib (0.5-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Minimizing rules file, which also dropps not required autotools foo
+    (Closes: #533705).
+  * Adding misc depends.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Sun, 09 Aug 2009 11:13:37 +0200
+
+lzlib (0.5-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Correcting wrong email address in previous changelog entry.
+  * Merging upstream version 0.5.
+  * Updating package to standards version 3.8.2.
+  * Using correct rfc-2822 date formats in changelog.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Fri, 10 Jul 2009 15:02:20 +0200
+
+lzlib (0.4-1) sid; urgency=low
+
+  * Uploading to sid.
+  * Merging upstream version 0.4.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 08 Jun 2009 18:20:22 +0200
+
+lzlib (0.3-2) sid; urgency=low
+
+  * Uploading to sid.
+  * Removing dir info pages, apparently useless (Closes: #530451).
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Thu, 28 May 2009 23:44:37 +0200
+
+lzlib (0.3-1) sid; urgency=low
+
+  * Initial upload to sid.
+
+ -- Daniel Baumann <daniel.baumann@progress-linux.org>  Mon, 04 May 2009 07:51:00 +0200

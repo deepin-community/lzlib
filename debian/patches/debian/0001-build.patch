@@ -1,0 +1,19 @@
+Author: Daniel Baumann <daniel.baumann@progress-linux.org>
+Description: Avoid overwriting build-environment.
+
+diff -Naurp lzlib.orig/configure lzlib/configure
+--- lzlib.orig/configure
++++ lzlib/configure
+@@ -29,9 +29,9 @@ infodir='$(datarootdir)/info'
+ libdir='$(exec_prefix)/lib'
+ mandir='$(datarootdir)/man'
+ CC=gcc
+-CPPFLAGS=
+-CFLAGS='-Wall -W -O2'
+-LDFLAGS=
++#CPPFLAGS=
++#CFLAGS='-Wall -W -O2'
++#LDFLAGS=
+ 
+ # checking whether we are using GNU C.
+ /bin/sh -c "${CC} --version" > /dev/null 2>&1 || { CC=cc ; CFLAGS=-O2 ; }

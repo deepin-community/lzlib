@@ -1,0 +1,62 @@
+Source: lzlib
+Section: libs
+Priority: optional
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ texinfo,
+Rules-Requires-Root: no
+Standards-Version: 4.6.0
+Homepage: http://www.nongnu.org/lzip/lzlib.html
+Vcs-Browser: https://git.progress-linux.org/users/daniel.baumann/debian/packages/lzlib
+Vcs-Git: https://git.progress-linux.org/users/daniel.baumann/debian/packages/lzlib
+
+Package: liblz-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends:
+ liblz1 (= ${binary:Version}),
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: data compressor based on the LZMA algorithm (development)
+ The lzlib compression library provides in-memory LZMA compression and
+ decompression functions, including integrity checking of the uncompressed data.
+ The compressed data format used by the library is the lzip format.
+ .
+ This package contains the development files.
+
+Package: liblz1
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends:
+ ${misc:Pre-Depends},
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: data compressor based on the LZMA algorithm (library)
+ The lzlib compression library provides in-memory LZMA compression and
+ decompression functions, including integrity checking of the uncompressed data.
+ The compressed data format used by the library is the lzip format.
+
+Package: minilzip
+Section: utils
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Provides:
+ lzip-alternative,
+ lzip-compressor,
+ lzip-decompressor,
+Description: minified, lossless data compressor based on the LZMA algorithm
+ Lzip is a lossless data compressor based on the LZMA algorithm, with very safe
+ integrity checking and a user interface similar to the one of gzip or bzip2.
+ Lzip decompresses almost as fast as gzip and compresses better than bzip2,
+ which makes it well suited for software distribution and data archiving.
+ .
+ Minilzip is a minimal version of lzip using the lzip file format; the files
+ produced by Minilzip are fully compatible with lzip.
+ .
+ Minilzip is intended as a test program for the lzlib library.

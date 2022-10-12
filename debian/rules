@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/architecture.mk
+
+ifeq ($(origin CC),default)
+CC = $(DEB_HOST_GNU_TYPE)-gcc
+endif
+
+%:
+	dh ${@}
+
+override_dh_auto_configure:
+	dh_auto_configure -- --enable-shared --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) 'CC=$(CC)'
+
+override_dh_auto_install:
+	dh_auto_install -- LDCONFIG=/bin/true
+
+execute_after_dh_auto_install:
+	# minilzip
+	install -D -m 0755 minilzip_shared debian/minilzip/usr/bin/minilzip
+	install -D -m 0644 doc/minilzip.1 debian/minilzip/usr/share/man/man1/minilzip.1
+
+	# update-alternatives
+	mv debian/minilzip/usr/bin/minilzip debian/minilzip/usr/bin/lzip.minilzip
+	ln -s /usr/bin/lzip.minilzip debian/minilzip/usr/bin/minilzip
+
+	mv debian/minilzip/usr/share/man/man1/minilzip.1 debian/minilzip/usr/share/man/man1/lzip.minilzip.1
+	ln -s /usr/share/man/man1/lzip.minilzip.1.gz debian/minilzip/usr/share/man/man1/minilzip.1.gz
+
+	# removing unused files
+	rm -f debian/tmp/usr/share/info/dir*
+
+override_dh_missing:
+	dh_missing --fail-missing
